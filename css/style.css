@@ -1,0 +1,266 @@
+:root {
+  --primary: #ff4b2b;
+  --secondary: #ff416c;
+  --light: #fff;
+  --gray: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*=========================================================================*/
+/*=====================Header Section Start================================*/
+/*=========================================================================*/
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  padding: 10px;
+  font-size: larger;
+  position: sticky;
+  top: 0;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  margin-right: 7rem;
+}
+/*=====================Header Section End==================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*=====================Hero Section Start==================================*/
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  color: var(--light);
+  font-size: 4rem;
+}
+
+.hero p {
+  color: var(--light);
+  font-size: large;
+}
+
+.hero a {
+  background-color: var(--primary);
+  padding: 1.2rem 2.5rem;
+  border-radius: 30px;
+}
+
+/*=====================Hero Section End====================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*====================Feature Section Start================================*/
+.features {
+  background-color: var(--gray);
+  padding: 5rem;
+}
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.feature-card {
+  width: 100%;
+  background-color: var(--light);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 720px) {
+  .feature-card {
+    width: 25%;
+  }
+}
+
+.features h3 {
+  color: #ff4b2b;
+}
+
+/*=====================Feature Section End=================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*=====================Menu Section Start==================================*/
+.menu {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+.part1 {
+  padding: 3em;
+}
+.part2 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  width: 100%;
+  height: auto;
+  overflow: clip;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu-card img {
+  /* position: relative; */
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.menu-card-content {
+  padding: 1.5rem;
+}
+
+.menu-card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-card-btn {
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  height: 2.5em;
+  color: #fff;
+}
+
+/*=======================Menu Section End==================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*======================About Section Start================================*/
+.about {
+  background-color: #f5f5f5;
+  padding: 3em;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+}
+/*=====================About Section End===================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*====================Contact Section Start================================*/
+
+.contact {
+  padding: 3em;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 4em auto;
+  gap: 2em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-frm-itm {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid rgb(200, 192, 192);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-submit-btn {
+  background-color: #ff4b2b;
+  border: none;
+  padding: 1em;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+/*====================Contact Section End==================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*=====================Footer Section Start================================*/
+
+.footer {
+  background-color: rgb(65, 60, 60);
+  padding: 2em;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+}
+/*=====================Footer Section Ends=================================*/
+/*=========================================================================*/
